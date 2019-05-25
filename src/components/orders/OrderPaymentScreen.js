@@ -502,11 +502,8 @@ class OrderPaymentScreen extends Component {
 				priceTotal: amountPaid
 			};
 
-			if (['liter', 'gallon'].includes(creditProduct.unitMeasure)) {
-				receiptLineItem.litersPerSku = creditProduct.unitPerProduct;
-			} else {
-				receiptLineItem.litersPerSku = "N/A";
-			}
+			// We already know this product is not a water product
+			receiptLineItem.litersPerSku = "N/A";
 
 			// By design, the LOANPAYMENT product has a price and a cogs amount of 0
 			// so no calculations needed
