@@ -351,6 +351,8 @@ class OrderPaymentScreen extends Component {
 	formatAndSaveSale = () => {
 		let receipt = null;
 		let priceTotal = 0;
+		const currentUser = PosStorage.getSettings().user;
+
 		if (!this.isPayoffOnly()) {
 
 			// Assumes that there is at least one product
@@ -368,7 +370,8 @@ class OrderPaymentScreen extends Component {
 				salesChannelId: this.props.selectedCustomer.salesChannelId,
 				customerTypeId: this.props.selectedCustomer.customerTypeId,
 				products: [],
-				active: 1
+				active: 1,
+				userName: currentUser
 			};
 			if (!receipt.siteId) {
 				// This fixes issues with the pseudo direct customer
