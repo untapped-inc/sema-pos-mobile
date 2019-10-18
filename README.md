@@ -12,7 +12,7 @@ TBD
 
 ## Requirements
 
-For development, you will need Node.js, Expo CLI, and a node global package manager, Yarn, installed in your environement.
+For development, you will need Node.js, <a href="https://facebook.github.io/react-native/docs/getting-started" target="_blank">React Native</a> and a node global package manager, Yarn, installed in your environement.
 
 You will also need to make sure SEMA Core is setup and running successfully on your development machine.
 
