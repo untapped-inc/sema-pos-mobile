@@ -16,7 +16,7 @@
     "i18n-js": "^3.0.11",
     "intl": "~1.2.5",
     "moment": "^2.23.0",
-    "moment-timezone": "^0.5.23",
+    "moment-timezone": "^0.5.35",
     "random-material-color": "^1.0.3",
     "react": "16.6.3",
     "react-native": "0.58.4",
